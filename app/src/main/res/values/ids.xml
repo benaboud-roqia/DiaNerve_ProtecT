@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imageWelcome" type="id">imageWelcome</item>
+    <item name="textDescription" type="id">textDescription</item>
+    <item name="btnNext" type="id">btnNext</item>
+</resources>

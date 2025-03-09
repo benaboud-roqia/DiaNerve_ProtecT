@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Image d'illustration -->
+
+    <!-- Texte de description -->
+
+    <!-- Bouton Suivant -->
+
+    <ImageView
+        android:id="@+id/imageWelcome"
+        android:layout_width="221dp"
+        android:layout_height="172dp"
+        android:contentDescription="Illustration de la neuropathie"
+        android:src="@drawable/neuropathy_image"
+        app:layout_constraintBottom_toTopOf="@id/textDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="407dp"
+        android:layout_height="485dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Bienvenue sur DiaNerve_Protect !\nL'application dédiée à la détection précoce de la neuropathie diabétique.\n\n🩺 Pourquoi utiliser DiaNerve_ProtecT ?\n\n• Détectez les premiers signes de neuropathie avant qu'ils ne s'aggravent.\n• Suivez l'évolution de votre santé nerveuse.\n• Obtenez des recommandations personnalisées.\n\n📊 Comment ça marche ?\n\n• Auto-évaluation rapide : Répondez à quelques questions sur vos sensations et symptômes.\n• Tests interactifs : Effectuez des exercices simples pour analyser votre sensibilité nerveuse.\n• Résultats instantanés : Recevez une évaluation préliminaire et des conseils adaptés.\n\n"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageWelcome" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/green_500"
+        android:text="Suivant"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

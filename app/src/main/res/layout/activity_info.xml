@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ScrollView pour permettre le défilement -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+
+            <!-- Image informative -->
+            <ImageView
+                android:id="@+id/imgInfo"
+                android:layout_width="61dp"
+                android:layout_height="63dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="Illustration de la neuropathie"
+                android:scaleType="centerCrop"
+                android:src="@drawable/neuropathy" />
+
+            <!-- Titre principal -->
+            <TextView
+                android:id="@+id/titleInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Neuropathie Diabétique"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Définition de la maladie -->
+            <TextView
+                android:id="@+id/textDefinition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La neuropathie diabétique est une complication fréquente du diabète. Elle affecte les nerfs, provoquant des douleurs, une perte de sensation et une faiblesse musculaire. Elle est souvent causée par une glycémie mal contrôlée sur le long terme."
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:background="@color/light_gray"
+                android:layout_marginBottom="15dp"/>
+
+            <!-- Symptômes -->
+            <TextView
+                android:id="@+id/textSymptomsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔍 Symptômes"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/textSymptoms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✅ Fourmillements et picotements\n✅ Douleurs ou crampes musculaires\n✅ Perte de sensation dans les pieds et les mains\n✅ Faiblesse musculaire"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:background="@color/light_gray"
+                android:layout_marginBottom="15dp"/>
+
+            <!-- Conseils de prévention -->
+            <TextView
+                android:id="@+id/textPreventionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🛡️ Prévention"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/textPrevention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🟢 Surveillez votre glycémie\n🟢 Faites de l'exercice régulièrement\n🟢 Adoptez une alimentation équilibrée\n🟢 Consultez votre médecin fréquemment"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:background="@color/light_gray"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Bouton Suivant -->
+            <Button
+                android:id="@+id/btnNextInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suivant"
+                android:backgroundTint="@color/green_500"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

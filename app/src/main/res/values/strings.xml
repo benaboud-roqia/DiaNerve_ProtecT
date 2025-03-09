@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">DiaNerve_ProtecT</string>
+    <string name="logo_de_l_application" translatable="false">Logo de l\'application</string>
+    <string-array name="sex_options">
+        <item>Homme</item>
+        <item>Femme</item>
+        <item>Autre</item>
+    </string-array>
+
+    <string-array name="diabetes_types">
+        <item>Type 1</item>
+        <item>Type 2</item>
+        <item>Gestationnel</item>
+    </string-array>
+</resources>
